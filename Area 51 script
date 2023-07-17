@@ -1,0 +1,151 @@
+function TeleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayer;
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+    end
+end
+function TeleportWeapons(Weapons)
+    if game:GetService("Workspace").Weapons:FindFirstChild(Weapons) then
+        TeleportTO(game:GetService("Workspace").Weapons[Weapons].Hitbox.CFrame)
+    end
+end
+
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "🔥Area 51 Script🔥",
+   LoadingTitle = "🔥Area 51 Script🔥",
+   LoadingSubtitle = "by lcarpet",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, 
+      FileName = "Big Hub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "AVr3DGMMm2", 
+      RememberJoins = true 
+   },
+   KeySystem = true, 
+   KeySettings = {
+      Title = "Area 51 | Key",
+      Subtitle = "Link in Discord Server",
+      Note = "Join the Dicord Server for Key https://discord.gg/AVr3DGMMm2",
+      FileName = "Key", 
+      SaveKey = true, 
+      GrabKeyFromSite = true, 
+      Key = {"https://pastebin.com/raw/wvTSfjdt"} 
+   }
+})
+
+local MainTab = Window:CreateTab("🏠 Home", nil)
+local MainSection = MainTab:CreateSection("Main")
+
+local Button = MainTab:CreateButton({
+   Name = "Invisible Character",
+   Callback = function()
+   loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Invisible%20Character.txt"))()
+   end,
+})
+
+
+local Button = MainTab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+   end,
+})
+
+local WeaponsTab = Window:CreateTab("Weapons", nil)
+local WeaponsSection = WeaponsTab:CreateSection("Weapons")
+
+local Button = WeaponsTab:CreateButton({
+    Name = "AWP",
+    Callback = function()
+        TeleportWeapons('AWP')
+    end,
+ })
+ 
+ local Button = WeaponsTab:CreateButton({
+    Name = "M1014",
+    Callback = function()
+        TeleportWeapons('M1014')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "Desert Eagle",
+    Callback = function()
+        TeleportWeapons('Desert Eagle')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "M4A1",
+    Callback = function()
+        TeleportWeapons('M4A1')
+    end,
+ })
+ 
+ local Button = WeaponsTab:CreateButton({
+    Name = "R870",
+    Callback = function()
+        TeleportWeapons('R870')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "RayGun",
+    Callback = function()
+        TeleportWeapons('RayGun')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "MP5k",
+    Callback = function()
+        TeleportWeapons('MP5k')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "AN-94",
+    Callback = function()
+        TeleportWeapons('AN-94')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "AK-47",
+    Callback = function()
+        TeleportWeapons('AK-47')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "DB Shotgun",
+    Callback = function()
+        TeleportWeapons('DB Shotgun')
+    end,
+ })
+ 
+  local Button = WeaponsTab:CreateButton({
+    Name = "M16A2/M203",
+    Callback = function()
+        TeleportWeapons('M16A2/M203')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "P90",
+    Callback = function()
+        TeleportWeapons('P90')
+    end,
+ })
+
+ local Button = WeaponsTab:CreateButton({
+    Name = "SVD",
+    Callback = function()
+        TeleportWeapons('SVD')
+    end,
+ })
